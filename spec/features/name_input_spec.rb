@@ -1,19 +1,11 @@
 feature 'Player names' do
   scenario 'expects player to enter name into a field' do
-    visit '/'
-    fill_in 'player1_name', with: 'Sam'
-    fill_in 'player2_name', with: 'Harry'
-    click_on 'Fight!'
-
-    # save_and_open_page
+    sign_in_and_play
     expect(page).to have_content 'Sam vs. Harry'
   end
 
   scenario 'expects to see player hit points' do
-    visit '/'
-    fill_in 'player1_name', with: 'Sam'
-    fill_in 'player2_name', with: 'Harry'
-    click_on 'Fight!'
+    sign_in_and_play
     expect(page).to have_content 'Harry Health: 100 HP'
   end
 end
