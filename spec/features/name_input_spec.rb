@@ -6,6 +6,6 @@ feature 'Player names' do
 
   scenario 'expects to see player hit points' do
     sign_in_and_play
-    expect(page).to have_content 'Harry Health: 100 HP'
+    expect(page).to have_content 'Harry: 100 HP'
   end
 end
