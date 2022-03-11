@@ -16,12 +16,12 @@ describe Player do
     end
   end
 
-  describe '#reduce_health' do
-    it 'damages the player' do
-      expect(harry).to receive(:get_damage)
-      samuel.reduce_health(harry)
-    end
-  end
+  # describe '#attack' do
+  #   it 'damages the player' do
+  #     expect(harry).to receive(:get_damage)
+  #     samuel.attack(harry)
+  #   end
+  # end
 
   describe '#get_damage' do
     it 'reduces the players health' do

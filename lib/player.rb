@@ -9,10 +9,6 @@ class Player
     @health = health
   end
 
-  def reduce_health(player)
-    player.get_damage
-  end
-
   def get_damage
     @health -= DAMAGE_POINTS
   end
